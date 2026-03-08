@@ -1,17 +1,8 @@
 import React from 'react'
 import s from './CustomFormField.module.scss'
-import { FieldErrors, FieldValues, UseFormRegister, Path } from 'react-hook-form'
+import { FieldValues } from 'react-hook-form'
 import { Input } from 'antd'
-import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons'
-
-type IProps<T extends FieldValues> = {
-	name: Path<T>
-	placeholder: string
-	register: UseFormRegister<T>
-	errors: FieldErrors<T>
-	label?: string
-	type?: string
-}
+import { CustomFormFieldProps } from './CustomFormField.types'
 
 export const CustomFormField = <T extends FieldValues>({
 	name,
@@ -19,8 +10,11 @@ export const CustomFormField = <T extends FieldValues>({
 	errors,
 	register,
 	label,
-	type = 'text'
-}: IProps<T>) => {
+	type = 'text',
+	withErrors = false
+}: CustomFormFieldProps<T>) => {
+	const fieldError = errors?.[name]
+
 	return (
 		<div className={s.container}>
 			{label && <span className={s.label}>{label}</span>}
@@ -29,9 +23,11 @@ export const CustomFormField = <T extends FieldValues>({
 			) : (
 				<Input {...register(name)} placeholder={placeholder} className={s.input} />
 			)}
-			<div style={{ visibility: errors[name] ? 'visible' : 'hidden' }}>
-				{errors[name] ? (errors[name].message as string) : 'none'}
-			</div>
+			{withErrors && (
+				<div style={{ visibility: fieldError ? 'visible' : 'hidden' }}>
+					{fieldError ? (fieldError.message as string) : 'none'}
+				</div>
+			)}
 		</div>
 	)
 }

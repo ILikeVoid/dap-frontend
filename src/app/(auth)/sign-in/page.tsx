@@ -35,7 +35,14 @@ const SignUpPage = () => {
 					</div>
 				</div>
 				<form onSubmit={handleSubmit(onSubmit)}>
-					<CustomFormField<SignInSchema> name='email' placeholder='Email' register={register} errors={errors} label='Электронная  почта'/>
+					<CustomFormField<SignInSchema>
+						name='email'
+						placeholder='Email'
+						register={register}
+						errors={errors}
+						label='Электронная  почта'
+						withErrors
+					/>
 					<CustomFormField<SignInSchema>
 						name='password'
 						placeholder='•••••••••'
@@ -43,6 +50,7 @@ const SignUpPage = () => {
 						type='password'
 						register={register}
 						errors={errors}
+						withErrors
 					/>
 					<CustomButton type='primary' htmlType='submit' isGradient>
 						Войти
