@@ -5,12 +5,13 @@ import type { ButtonProps } from 'antd'
 import React, { useState } from 'react'
 
 type IProps = ButtonProps & {
+	fontSize?: number
 	isGradient?: boolean
 }
 
 const DEFAULT_GRADIENT = 'linear-gradient(90deg, #2f55d4 0%, #4f46e5 100%)'
 
-export const CustomButton = ({ isGradient = false, children, ...props }: IProps) => {
+export const CustomButton = ({ fontSize = 14, isGradient = false, children, ...props }: IProps) => {
 	const [hover, setHover] = useState(false)
 
 	return (
@@ -19,6 +20,8 @@ export const CustomButton = ({ isGradient = false, children, ...props }: IProps)
 			onMouseLeave={() => setHover(false)}
 			{...props}
 			style={{
+				fontWeight: '550',
+				fontSize: `${fontSize}px`,
 				borderRadius: '12px',
 				background:
 					isGradient && hover

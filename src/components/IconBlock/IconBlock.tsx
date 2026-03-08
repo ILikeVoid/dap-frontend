@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import s from './IconBlock.module.scss'
 
-type IProps= {
+type IProps = {
 	children: ReactNode
 }
 

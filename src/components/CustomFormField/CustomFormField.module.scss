@@ -1,20 +1,21 @@
 .container {
   .label {
     display: block;
-    margin-left: 12px;
     margin-bottom: 4px;
   }
 
   .input {
-    background: transparent;
+    background: #f6f7f9;
     border-radius: 12px;
     height: 42px;
   }
 
   div {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 4px;
-    color: red;
-    font-size: 14px;
+    color: $primary-red;
+    font-size: 12px;
     margin-left: 12px;
   }
 }

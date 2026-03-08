@@ -13,8 +13,7 @@ const AntdProvider = ({ children }: { children: ReactNode }) => {
 					colorPrimary: DEFAULT_GRADIENT
 				},
 				components: {
-					Input: {
-					}
+					Input: {}
 				}
 			}}
 		>
