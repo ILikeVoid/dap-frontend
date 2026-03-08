@@ -1,19 +1,19 @@
-import { FieldErrors, FieldValues, Path, UseFormRegister } from 'react-hook-form'
+import { Control, FieldErrors, FieldValues, Path } from 'react-hook-form'
 
-export type BaseCustomFormFieldProps<T extends FieldValues> = {
+type BaseCustomFormFieldProps<T extends FieldValues> = {
 	name: Path<T>
 	placeholder: string
-	register: UseFormRegister<T>
+	control: Control<T>
 	label?: string
 	type?: string
 }
 
-export type CustomFormFieldPropsWithErrors<T extends FieldValues> = BaseCustomFormFieldProps<T> & {
+type CustomFormFieldPropsWithErrors<T extends FieldValues> = BaseCustomFormFieldProps<T> & {
 	withErrors: true
 	errors: FieldErrors<T>
 }
 
-export type CustomFormFieldPropsWithoutErrors<T extends FieldValues> = BaseCustomFormFieldProps<T> & {
+type CustomFormFieldPropsWithoutErrors<T extends FieldValues> = BaseCustomFormFieldProps<T> & {
 	withErrors?: false
 	errors?: FieldErrors<T>
 }
