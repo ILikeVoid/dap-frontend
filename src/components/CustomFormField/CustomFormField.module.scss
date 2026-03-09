@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   .label {
     display: block;
     margin-bottom: 4px;
@@ -8,6 +9,7 @@
     background: #f6f7f9;
     border-radius: 12px;
     height: 42px;
+    width: 100%;
   }
 
   div {

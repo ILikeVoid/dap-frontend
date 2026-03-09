@@ -3,9 +3,15 @@ import s from './CustomFormField.module.scss'
 import { Controller, FieldValues } from 'react-hook-form'
 import { Input } from 'antd'
 import { CustomFormFieldProps } from './CustomFormField.types'
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input/input'
+import { usePhoneInput } from 'react-international-phone'
 
 export const CustomFormField = <T extends FieldValues>(props: CustomFormFieldProps<T>) => {
 	const { name, placeholder, errors, control, label, type = 'text', withErrors = false } = props
+	const { inputValue, handlePhoneValueChange } = usePhoneInput({
+		defaultCountry: 'kz'
+	})
 
 	const fieldError = errors?.[name]
 	const errorMessage = fieldError?.message
@@ -21,18 +27,25 @@ export const CustomFormField = <T extends FieldValues>(props: CustomFormFieldPro
 					type === 'password' ? (
 						<Input.Password
 							{...field}
-							placeholder={placeholder}
+							placeholder={placeholder ? placeholder : ''}
 							className={s.input}
 							status={errorMessage ? 'error' : ''}
-							autoComplete='new-password'
+							autoComplete="new-password"
+						/>
+					) : type === 'phone' ? (
+						<Input
+							value={inputValue}
+							onChange={handlePhoneValueChange}
+							placeholder={placeholder ? placeholder : ''}
+							className={s.input}
 						/>
 					) : (
 						<Input
 							{...field}
-							placeholder={placeholder}
+							placeholder={placeholder ? placeholder : ''}
 							className={s.input}
 							status={errorMessage ? 'error' : ''}
-							autoComplete='off'
+							autoComplete="off"
 						/>
 					)
 				}

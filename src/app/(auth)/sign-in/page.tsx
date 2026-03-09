@@ -10,7 +10,7 @@ import { WalletOutlined } from '@ant-design/icons'
 import { IconBlock } from '@/components/IconBlock/IconBlock'
 import Link from 'next/link'
 
-const SignUpPage = () => {
+const SignInPage = () => {
 	const {
 		control,
 		handleSubmit,
@@ -34,38 +34,38 @@ const SignUpPage = () => {
 						<WalletOutlined style={{ fontSize: '24px', color: 'white' }} />
 					</IconBlock>
 					<div className={s.header_text}>
-						<div className='page_title'>С возвращением!</div>
+						<div className="page_title">С возвращением!</div>
 						<div className={s.header_info}>Вход в систему</div>
 					</div>
 				</div>
-				<div className='content_box'>
-					<form onSubmit={handleSubmit(onSubmit)} autoComplete='off'>
+				<div className="content_box">
+					<form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
 						<CustomFormField<SignInSchema>
-							name='email'
-							placeholder='employee@gmail.com'
+							name="email"
+							placeholder="employee@gmail.com"
 							control={control}
 							errors={errors}
-							label='Электронная  почта'
+							label="Электронная  почта"
 							withErrors
 						/>
 						<CustomFormField<SignInSchema>
-							name='password'
-							placeholder='•••••••••'
-							label='Пароль'
-							type='password'
+							name="password"
+							placeholder="•••••••••"
+							label="Пароль"
+							type="password"
 							control={control}
 							errors={errors}
 							withErrors
 						/>
-						<Link href='#' className='link'>
+						<Link href="#" className="link">
 							Забыли пароль?
 						</Link>
-						<CustomButton type='primary' htmlType='submit' fontSize={16} isGradient>
+						<CustomButton type="primary" htmlType="submit" fontSize={16} isGradient>
 							Войти
 						</CustomButton>
 						<div className={s.form_options}>
 							<span>Нет аккаунта?</span>
-							<Link href='#' className='link'>
+							<Link href="#" className="link">
 								Регистрация
 							</Link>
 						</div>
@@ -76,4 +76,4 @@ const SignUpPage = () => {
 	)
 }
 
-export default SignUpPage
+export default SignInPage

@@ -2,7 +2,7 @@ import { Control, FieldErrors, FieldValues, Path } from 'react-hook-form'
 
 type BaseCustomFormFieldProps<T extends FieldValues> = {
 	name: Path<T>
-	placeholder: string
+	placeholder?: string
 	control: Control<T>
 	label?: string
 	type?: string
