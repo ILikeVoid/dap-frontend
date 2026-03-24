@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+
   .label {
     display: block;
     margin-bottom: 4px;
@@ -7,17 +8,53 @@
 
   .input {
     background: #f6f7f9;
-    border-radius: 12px;
-    height: 42px;
+    height: 40px;
     width: 100%;
+    border-radius: 12px;
   }
 
-  div {
+  .phone_input_wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+    border-radius: 12px;
+    height: 42px;
+
+    input {
+      border: none;
+      box-shadow: none;
+      padding-left: 12px;
+      outline: none;
+      border-radius: 0 12px 12px 0;
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &:hover {
+      border-color: #4f46e5;
+    }
+  }
+
+  .open_selector_county_phone {
+    border-bottom-left-radius: 0;
+  }
+
+  .error {
+    border-color: $primary_red;
+  }
+
+  .focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+  }
+
+  .error_text {
     display: flex;
     justify-content: flex-end;
-    margin-top: 4px;
     color: $primary-red;
     font-size: 12px;
-    margin-left: 12px;
   }
 }

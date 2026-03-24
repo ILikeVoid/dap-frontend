@@ -5,20 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5c8e7c-9614-44c4-8bba-a1c10fd27712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/sign-up.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/control-panel/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/page.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/GuardLogoIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/LogoIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/PendingIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/ProgressArrowIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/RegressArrowIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/DashboardIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/DepositIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/HelpIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/LogoutIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/SettingsIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/TransactionIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/VerifyIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/WalletIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/WithdrawIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DashboardHeader/DashboardHeader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DashboardHeader/DashboardHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PhoneCountyOptions/PhoneCountyOptions.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PhoneCountyOptions/PhoneCountyOptions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ReduxProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/auth/auth.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/auth/authApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/baseApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/constants/countries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/guards/AuthGuard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/guards/GuestGuard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-in/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/control-panel/control-panel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomButton/CustomButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomButton/CustomButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/AntdProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/AntdProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +70,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
-        <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -57,7 +99,7 @@
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PIXEL/Documents/dap-frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yerkebulan/Desktop/dap-frontend&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -67,7 +109,7 @@
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\PIXEL\\Documents\\dap-frontend\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\PIXEL\\Documents\\dap-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/yerkebulan/Desktop/dap-frontend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -76,6 +118,9 @@
       <recent name="C:\Users\PIXEL\Documents\dap-frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(dashboard)" />
+      <recent name="$PROJECT_DIR$/src/redux/features" />
+      <recent name="$PROJECT_DIR$/src/redux/features/auth" />
       <recent name="C:\Users\PIXEL\Documents\dap-frontend\src\app" />
     </key>
   </component>
@@ -97,7 +142,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
       </set>
     </attachedChunks>
   </component>
@@ -111,6 +156,20 @@
       <workItem from="1772880633760" duration="11173000" />
       <workItem from="1772956528254" duration="4705000" />
       <workItem from="1773033707717" duration="4963000" />
+      <workItem from="1773064846410" duration="9058000" />
+      <workItem from="1773179990106" duration="644000" />
+      <workItem from="1773204482673" duration="31000" />
+      <workItem from="1773241364607" duration="14517000" />
+      <workItem from="1773327393688" duration="511000" />
+      <workItem from="1773327918585" duration="30875000" />
+      <workItem from="1773758355865" duration="8921000" />
+      <workItem from="1773810187667" duration="15710000" />
+      <workItem from="1773939840943" duration="1299000" />
+      <workItem from="1773980495630" duration="28000" />
+      <workItem from="1774003747001" duration="6644000" />
+      <workItem from="1774038392382" duration="9422000" />
+      <workItem from="1774155539606" duration="4000" />
+      <workItem from="1774156708287" duration="936000" />
     </task>
     <servers />
   </component>

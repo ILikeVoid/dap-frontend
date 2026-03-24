@@ -1,0 +1,45 @@
+.header {
+  height: 70px;
+  background-color: #ffffff;
+  border: 1px solid $border-color;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .header_items_wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+
+      .logo_text {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+
+    .options {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      .account {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        .button {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,10 @@ type BaseCustomFormFieldProps<T extends FieldValues> = {
 	placeholder?: string
 	control: Control<T>
 	label?: string
-	type?: string
+	type?: 'text' | 'password' | 'phone'
+	withErrors?: boolean
+	isSubmitted?: boolean
+	prefix?: string
 }
 
 type CustomFormFieldPropsWithErrors<T extends FieldValues> = BaseCustomFormFieldProps<T> & {

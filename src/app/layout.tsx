@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.scss'
 import React, { ReactNode } from 'react'
 import AntdProvider from '@/providers/AntdProvider'
+import { StoreProvider } from '@/providers/ReduxProvider'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -16,10 +18,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>
-				<AntdProvider>{children}</AntdProvider>
-			</body>
+		<html lang="en">
+		<body className={inter.className}>
+		<StoreProvider>
+			<AntdProvider>{children}</AntdProvider>
+			<Toaster />
+		</StoreProvider>
+		</body>
 		</html>
 	)
 }
