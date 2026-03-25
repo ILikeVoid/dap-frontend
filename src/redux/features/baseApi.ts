@@ -4,6 +4,6 @@ import { baseQueryWithReauth } from '@/redux/features/baseQueryWithReauth'
 export const baseApi = createApi({
 	reducerPath: 'api',
 	baseQuery: baseQueryWithReauth,
-	tagTypes: ['Auth', 'User'],
+	tagTypes: ['Auth', 'User', 'Verification'],
 	endpoints: () => ({})
 })

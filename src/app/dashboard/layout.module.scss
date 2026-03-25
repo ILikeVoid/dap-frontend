@@ -1,7 +1,5 @@
 .dashboard_layout {
   display: grid;
-  grid-template-columns: 2fr 8fr;
-
-  .content {
-  }
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
 }

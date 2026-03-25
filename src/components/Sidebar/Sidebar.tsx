@@ -47,7 +47,10 @@ export const Sidebar = () => {
 				))}
 			</nav>
 			<div className={s.logout}>
-				<Link href="/"><LogoutIcon />Выйти</Link>
+				<Link href='/'>
+					<LogoutIcon />
+					Выйти
+				</Link>
 			</div>
 		</div>
 	)

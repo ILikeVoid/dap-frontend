@@ -11,7 +11,6 @@ import { DepositIcon } from '@/assets/icons/nav/DepositIcon'
 import { WithdrawIcon } from '@/assets/icons/nav/WithdrawIcon'
 import { VerifyIcon } from '@/assets/icons/nav/VerifyIcon'
 import { useRouter } from 'next/navigation'
-import { Table } from 'antd'
 
 type TransactionTableDataType = {
 	key: string
