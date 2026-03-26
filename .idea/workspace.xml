@@ -5,62 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5c8e7c-9614-44c4-8bba-a1c10fd27712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/dashboard/control-panel/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dashboard/layout.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/GuardLogoIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/LogoIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/PendingIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/ProgressArrowIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/RegressArrowIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/DashboardIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/DepositIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/HelpIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/LogoutIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/SettingsIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/TransactionIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/VerifyIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/WalletIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/WithdrawIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DashboardHeader/DashboardHeader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DashboardHeader/DashboardHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PhoneCountyOptions/PhoneCountyOptions.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PhoneCountyOptions/PhoneCountyOptions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/ReduxProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/features/auth/auth.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/features/auth/authApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/features/baseApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/hooks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/constants/countries.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/guards/AuthGuard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/guards/GuestGuard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/control-panel/control-panel.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomButton/CustomButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomButton/CustomButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomFormField/CustomFormField.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/AntdProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/AntdProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +117,8 @@
       <workItem from="1774038392382" duration="9422000" />
       <workItem from="1774155539606" duration="4000" />
       <workItem from="1774156708287" duration="936000" />
+      <workItem from="1774351642883" duration="89000" />
+      <workItem from="1774500541322" duration="4831000" />
     </task>
     <servers />
   </component>
