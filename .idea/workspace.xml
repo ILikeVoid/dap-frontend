@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5c8e7c-9614-44c4-8bba-a1c10fd27712" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dap-frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/admin/kyc/kyc.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/admin/kyc/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/admin/layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/admin/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/DocsIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/MagazineIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/ModeratorIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/nav/UsersIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/users/users.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/users/usersApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/features/verification/verification.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/types/api.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/features/baseQueryWithReauth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/verify/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/verify/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/verify/verify.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/verify/verify.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconBlock/IconBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/features/verification/verificationApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/features/verification/verificationApi.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -34,32 +54,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yerkebulan/Desktop/dap-frontend&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\PIXEL\\Documents\\dap-frontend\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/yerkebulan/Desktop/dap-frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/dauren/dap-frontend",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\PIXEL\\Documents\\dap-frontend\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/dauren/dap-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PIXEL\Documents\dap-frontend" />
@@ -89,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
       </set>
     </attachedChunks>
   </component>
@@ -119,6 +140,7 @@
       <workItem from="1774156708287" duration="936000" />
       <workItem from="1774351642883" duration="89000" />
       <workItem from="1774500541322" duration="4831000" />
+      <workItem from="1774609684167" duration="6217000" />
     </task>
     <servers />
   </component>

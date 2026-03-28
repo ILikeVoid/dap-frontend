@@ -6,41 +6,55 @@
 
 .box {
 	margin-top: 20px;
-    width: fit-content;
-    width: 40%;
+	width: fit-content;
+	width: 40%;
 
 	.section_title {
 		font-weight: 550;
 
-        span {
-            margin-left: 10px;
-            color: $primary-red;
-        }
+		span {
+			margin-left: 10px;
+			color: $primary-red;
+		}
 	}
 
-    .upload {
-        cursor: pointer;
-        border-radius: 12px;
-        border: 2px dashed $border-color;
-        margin-top: 20px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: $gray-text;
-        font-weight: 400;
-        transition: all 0.3s;
+	.upload {
+		cursor: pointer;
+		border-radius: 12px;
+		border: 2px dashed $border-color;
+		margin-top: 20px;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: $gray-text;
+		font-weight: 400;
+		transition: all 0.3s;
 
-        &:hover {
-            border-color: $blue-text;
-            background-color: hsla(210, 33%, 93%, 0.8);
-        }
-    }
+		&:hover {
+			border-color: $blue-text;
+			background-color: hsla(210, 33%, 93%, 0.8);
+		}
+	}
+}
+
+.loading_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.request_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 20px;
 }
 
 .submit {
-    height: 50px;
-    margin-top: 30px;
-    width: 45%;
+	height: 50px;
+	margin-top: 30px;
+	width: 45%;
 }

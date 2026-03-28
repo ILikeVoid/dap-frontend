@@ -1,14 +1,23 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { CheckOutlined, UploadOutlined } from '@ant-design/icons'
+import { CheckCircleOutlined, CheckOutlined, ClockCircleOutlined, UploadOutlined } from '@ant-design/icons'
 import s from './verify.module.scss'
-import { useCreateVerificationMutation } from '@/redux/features/verification/verificationApi'
+import {
+	useCreateVerificationMutation,
+	useGetMyVerificationRequestQuery
+} from '@/redux/features/verification/verificationApi'
 import { CustomButton } from '@/components/CustomButton/CustomButton'
 import toast from 'react-hot-toast'
+import { Spin } from 'antd'
 
 const VerifyPage = () => {
 	const [createVerification, { isLoading }] = useCreateVerificationMutation()
+	const {
+		data: myVerifyRequest,
+		refetch: refetchVerificationRequest,
+		isLoading: isLoadingMyVerificationRequest
+	} = useGetMyVerificationRequestQuery()
 
 	const [files, setFiles] = useState<{
 		passportFront?: File
@@ -40,7 +49,7 @@ const VerifyPage = () => {
 
 	const handleSubmit = async () => {
 		if (!files.passportFront || !files.passportBack || !files.selfie) {
-			alert('Заполни обязательные поля')
+			toast.error('Заполни обязательные поля', { position: 'bottom-center' })
 			return
 		}
 
@@ -61,7 +70,8 @@ const VerifyPage = () => {
 				error: (err: any) => err?.data?.message || 'Ошибка отправки'
 			})
 		} catch (err) {
-			console.log(err)
+		} finally {
+			refetchVerificationRequest()
 		}
 	}
 
@@ -99,20 +109,39 @@ const VerifyPage = () => {
 	return (
 		<div className='content-container dashboard_page'>
 			<div className='page_title_dashboard'>Верификация личности</div>
-			<div className={s.info}>Загрузите документы для подтверждения вашей личности</div>
-			{renderUpload('Паспорт (лицевая сторона)', 'passportFront', true)}
-			{renderUpload('Паспорт (обратная сторона)', 'passportBack', true)}
-			{renderUpload('Селфи с документом', 'selfie', true)}
-			{renderUpload('Дополнительный документ', 'extraDoc')}
-			<CustomButton
-				type='primary'
-				className={s.submit}
-				isGradient
-				onClick={handleSubmit}
-				disabled={isLoading || isDisabled}
-			>
-				{isLoading ? 'Отправка...' : 'Отправить на проверку'}
-			</CustomButton>
+			{isLoadingMyVerificationRequest ? (
+				<div className={s.loading_box}>
+					<Spin size='large' />
+				</div>
+			) : myVerifyRequest && myVerifyRequest.status === 'PENDING' ? (
+				<div className={`content_box ${s.request_box}`}>
+					<div className={s.request_id}>Номер заявки №{myVerifyRequest.id}</div>
+					<ClockCircleOutlined style={{ fontSize: '42px', color: '#f49e0a' }} />
+					<div className={s.pending_text}>Ваша заявка на верификацию в обработке. Пожалуйста подождите</div>
+				</div>
+			) : myVerifyRequest && myVerifyRequest.status === 'APPROVED' ? (
+				<div className={`content_box ${s.request_box}`}>
+					<CheckCircleOutlined style={{ fontSize: '42px', color: '#29A36E' }} />
+					<div>Вы верифицированный пользователь</div>
+				</div>
+			) : (
+				<>
+					<div className={s.info}>Загрузите документы для подтверждения вашей личности</div>
+					{renderUpload('Паспорт (лицевая сторона)', 'passportFront', true)}
+					{renderUpload('Паспорт (обратная сторона)', 'passportBack', true)}
+					{renderUpload('Селфи с документом', 'selfie', true)}
+					{renderUpload('Дополнительный документ', 'extraDoc')}
+					<CustomButton
+						type='primary'
+						className={s.submit}
+						isGradient
+						onClick={handleSubmit}
+						disabled={isLoading || isDisabled}
+					>
+						{isLoading ? 'Отправка...' : 'Отправить на проверку'}
+					</CustomButton>
+				</>
+			)}
 		</div>
 	)
 }

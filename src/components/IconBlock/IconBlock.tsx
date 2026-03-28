@@ -1,12 +1,20 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import s from './IconBlock.module.scss'
 
 type IProps = {
-	width: number,
+	width: number
 	height: number
 	children: ReactNode
+	bgColor?: string
 }
 
-export const IconBlock = ({ width, height, children }: IProps) => {
-	return <div className={s.icon_wrapper} style={{ width, height }}>{children}</div>
+export const IconBlock = ({ width, height, children, bgColor }: IProps) => {
+	return (
+		<div
+			style={{ width, height, background: bgColor ? bgColor : 'linear-gradient(90deg, #2f55d4 0%, #4f46e5 100%)' }}
+			className={s.icon_wrapper}
+		>
+			{children}
+		</div>
+	)
 }

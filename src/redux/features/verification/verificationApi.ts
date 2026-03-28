@@ -1,5 +1,6 @@
-// redux/features/verification/verification.api.ts
 import { baseApi } from '@/redux/features/baseApi'
+import { PaginatedResponse } from '@/shared/types/api.type'
+import { Verification } from '@/redux/features/verification/verification.type'
 
 export const verificationApi = baseApi.injectEndpoints({
 	endpoints: (builder) => ({
@@ -7,59 +8,55 @@ export const verificationApi = baseApi.injectEndpoints({
 			query: (body) => ({
 				url: '/verification',
 				method: 'POST',
-				body,
+				body
 			}),
-			invalidatesTags: ['Verification'],
+			invalidatesTags: ['Verification']
 		}),
-
-		getMyPending: builder.query<any, void>({
+		getMyVerificationRequest: builder.query<Verification, void>({
 			query: () => ({
 				url: '/verification/my-pending',
-				method: 'GET',
+				method: 'GET'
 			}),
-			providesTags: ['Verification'],
+			providesTags: ['Verification']
 		}),
-
-		getAll: builder.query<any[], void>({
-			query: () => ({
+		getAllVerificationRequests: builder.query<PaginatedResponse<Verification>, { page?: number; limit?: number }>({
+			query: ({ page = 1, limit = 10 }) => ({
 				url: '/verification',
 				method: 'GET',
+				params: { page, limit }
 			}),
-			providesTags: ['Verification'],
+			providesTags: ['Verification']
 		}),
-
 		getPending: builder.query<any[], void>({
 			query: () => ({
 				url: '/verification/pending',
-				method: 'GET',
+				method: 'GET'
 			}),
-			providesTags: ['Verification'],
+			providesTags: ['Verification']
 		}),
-
 		approve: builder.mutation<void, string>({
 			query: (id) => ({
 				url: `/verification/${id}/approve`,
-				method: 'PATCH',
+				method: 'PATCH'
 			}),
-			invalidatesTags: ['Verification'],
+			invalidatesTags: ['Verification']
 		}),
-
 		reject: builder.mutation<void, { id: string; reason: string }>({
 			query: ({ id, reason }) => ({
 				url: `/verification/${id}/reject`,
 				method: 'PATCH',
-				body: { reason },
+				body: { reason }
 			}),
-			invalidatesTags: ['Verification'],
-		}),
-	}),
+			invalidatesTags: ['Verification']
+		})
+	})
 })
 
 export const {
 	useCreateVerificationMutation,
-	useGetMyPendingQuery,
-	useGetAllQuery,
+	useGetMyVerificationRequestQuery,
+	useGetAllVerificationRequestsQuery,
 	useGetPendingQuery,
 	useApproveMutation,
-	useRejectMutation,
+	useRejectMutation
 } = verificationApi
