@@ -8,7 +8,7 @@ export type Verification = {
 	passportBack: string
 	selfie: string
 	extraDoc: string
-	status: 'PENDING' | 'SUCCESS' | 'REJECTED'
+	status: 'PENDING' | 'APPROVED' | 'REJECTED'
 	rejectionReason: string | null
 	updatedAt: Date
 	createdAt: Date

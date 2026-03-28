@@ -34,18 +34,18 @@ export const verificationApi = baseApi.injectEndpoints({
 			}),
 			providesTags: ['Verification']
 		}),
-		approve: builder.mutation<void, string>({
+		approveVerificationRequest: builder.mutation<void, string>({
 			query: (id) => ({
 				url: `/verification/${id}/approve`,
 				method: 'PATCH'
 			}),
 			invalidatesTags: ['Verification']
 		}),
-		reject: builder.mutation<void, { id: string; reason: string }>({
-			query: ({ id, reason }) => ({
+		rejectVerificationRequest: builder.mutation<void, { id: string; rejectionReason?: string }>({
+			query: ({ id, rejectionReason }) => ({
 				url: `/verification/${id}/reject`,
 				method: 'PATCH',
-				body: { reason }
+				body: { rejectionReason }
 			}),
 			invalidatesTags: ['Verification']
 		})
@@ -57,6 +57,6 @@ export const {
 	useGetMyVerificationRequestQuery,
 	useGetAllVerificationRequestsQuery,
 	useGetPendingQuery,
-	useApproveMutation,
-	useRejectMutation
+	useApproveVerificationRequestMutation,
+	useRejectVerificationRequestMutation
 } = verificationApi

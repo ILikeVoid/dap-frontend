@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { ChangeEvent, useRef, useState } from 'react'
 import { CheckCircleOutlined, CheckOutlined, ClockCircleOutlined, UploadOutlined } from '@ant-design/icons'
 import s from './verify.module.scss'
 import {
@@ -37,7 +37,7 @@ const VerifyPage = () => {
 		fileInputs[key].current?.click()
 	}
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>, key: keyof typeof files) => {
+	const handleChange = (e: ChangeEvent<HTMLInputElement>, key: keyof typeof files) => {
 		const file = e.target.files?.[0]
 		if (!file) return
 
@@ -63,16 +63,13 @@ const VerifyPage = () => {
 			formData.append('extraDoc', files.extraDoc)
 		}
 
-		try {
-			await toast.promise(createVerification(formData).unwrap(), {
-				loading: 'Отправка...',
-				success: 'Заявка успешно отправлена',
-				error: (err: any) => err?.data?.message || 'Ошибка отправки'
-			})
-		} catch (err) {
-		} finally {
-			refetchVerificationRequest()
-		}
+		await toast.promise(createVerification(formData).unwrap(), {
+			loading: 'Отправка...',
+			success: 'Заявка успешно отправлена',
+			error: (err: any) => err?.data?.message || 'Ошибка отправки'
+		})
+
+		refetchVerificationRequest()
 	}
 
 	const isDisabled = !files.passportFront || !files.passportBack || !files.selfie
@@ -96,8 +93,8 @@ const VerifyPage = () => {
 				</div>
 
 				<input
-					type='file'
-					accept='image/jpeg,image/png,application/pdf'
+					type="file"
+					accept="image/jpeg,image/png,application/pdf"
 					ref={fileInputs[key]}
 					style={{ display: 'none' }}
 					onChange={(e) => handleChange(e, key)}
@@ -107,11 +104,11 @@ const VerifyPage = () => {
 	}
 
 	return (
-		<div className='content-container dashboard_page'>
-			<div className='page_title_dashboard'>Верификация личности</div>
+		<div className="content-container dashboard_page">
+			<div className="page_title_dashboard">Верификация личности</div>
 			{isLoadingMyVerificationRequest ? (
 				<div className={s.loading_box}>
-					<Spin size='large' />
+					<Spin size="large" />
 				</div>
 			) : myVerifyRequest && myVerifyRequest.status === 'PENDING' ? (
 				<div className={`content_box ${s.request_box}`}>
@@ -132,7 +129,7 @@ const VerifyPage = () => {
 					{renderUpload('Селфи с документом', 'selfie', true)}
 					{renderUpload('Дополнительный документ', 'extraDoc')}
 					<CustomButton
-						type='primary'
+						type="primary"
 						className={s.submit}
 						isGradient
 						onClick={handleSubmit}
